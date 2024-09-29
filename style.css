@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    /* background-color: #ffffff; Optional background color */
+}
+.outer{
+    background-color: rgb(58, 58, 210);
+    padding: 30px;
+    font-size: 4vh;
+    border-radius: 10px;
+    font-family: cursive;
+}
+.show{
+    background-color: black;
+    /* padding: 25px; */
+    width: 343px;
+    border-radius: 9px;
+    margin-left: 21px
+}
+.show input{
+    height: 35px;
+    justify-content: center;
+    justify-content: center;
+    margin: 10px;
+    margin-left: 70px;
+    border-radius: 5px;
+
+}
+.show button{
+    padding: 8px;
+    height: 40px;
+    border-radius: 5px;
+
+}
+.boxes{
+    display: flex;
+}
+.dates{
+    margin: 20px;
+    height: 91px;
+    width: 87px;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+}
+.dates p{
+    font-size: 3vh;
+    margin-left: 22px;
+}
