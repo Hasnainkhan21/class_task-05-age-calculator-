@@ -3,9 +3,10 @@ function ChangeDate() {
     let birthDate = new Date(inputDate);
     let today = new Date();
 
-    if(!inputDate){
-        alert("Please enter your Date of Birth")
+    if(!inputDate) {
+        alert("enter ur DOB")
     } else {
+
 
     let yearObject = today.getFullYear() - birthDate.getFullYear();
     let monthObject = today.getMonth() - birthDate.getMonth();
@@ -23,8 +24,6 @@ function ChangeDate() {
     document.getElementById("year").innerText = yearObject;
     document.getElementById("months").innerText = monthObject;
     document.getElementById("days").innerText = dayObject;
-}
-if(inputDate){
-    document.getElementById('Age').value = !inputDate;
-}
+
+    }
 }
