@@ -31,24 +31,44 @@ body {
     border-radius: 5px;
 
 }
-.show button{
+.show button {
     padding: 8px;
-    height: 40px;
+    height: 35px;
     border-radius: 5px;
-
+    background-color: #ffffff; 
+    color: rgb(0, 0, 0); 
+    border: none; 
+    transition: background-color 0.2s ease; 
 }
-.boxes{
+
+.show button:active {
+    background-color: #fff0c5; 
+    transform: translateY(2px); 
+}
+
+
+.boxes {
     display: flex;
 }
-.dates{
+
+.dates {
     margin: 20px;
     height: 91px;
     width: 87px;
     border-radius: 8px;
     background-color: black;
     color: white;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
 }
-.dates p{
+
+.dates p {
     font-size: 3vh;
-    margin-left: 22px;
+    margin: 0; 
+    text-align: center; 
+}
+#heading{
+    margin-left: 70px;
 }

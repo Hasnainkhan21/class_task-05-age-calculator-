@@ -24,4 +24,7 @@ function ChangeDate() {
     document.getElementById("months").innerText = monthObject;
     document.getElementById("days").innerText = dayObject;
 }
+if(inputDate){
+    document.getElementById('Age').value = !inputDate;
+}
 }
