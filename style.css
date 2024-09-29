@@ -3,11 +3,12 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: rgba(137, 134, 134, 0.379);
     margin: 0;
     /* background-color: #ffffff; Optional background color */
 }
 .outer{
-    background-color: rgb(58, 58, 210);
+    background-color: rgb(107, 107, 229);
     padding: 30px;
     font-size: 4vh;
     border-radius: 10px;
@@ -25,7 +26,8 @@ body {
     justify-content: center;
     justify-content: center;
     margin: 10px;
-    margin-left: 70px;
+    margin-left: 14px;
+    width: 215px;
     border-radius: 5px;
 
 }

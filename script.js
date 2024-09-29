@@ -1,17 +1,27 @@
-
 function ChangeDate() {
     const inputDate = document.getElementById('Age').value;
-    let newDate = new Date(inputDate);
-    
-    let newDate2 = new Date();
+    let birthDate = new Date(inputDate);
+    let today = new Date();
 
-    var dateObject = newDate2.getDate() - newDate.getDate();
-    document.getElementById("days").innerText = dateObject;
+    if(!inputDate){
+        alert("Please enter your Date of Birth")
+    } else {
 
-    var monthObject = newDate2.getMonth() - newDate.getMonth();
-    document.getElementById("months").innerText = monthObject;
+    let yearObject = today.getFullYear() - birthDate.getFullYear();
+    let monthObject = today.getMonth() - birthDate.getMonth();
+    let dayObject = today.getDate() - birthDate.getDate();
 
-    var yearObject = newDate2.getFullYear() - newDate.getFullYear();
+    if (dayObject < 0) {
+        monthObject--;
+        dayObject += new Date(today.getFullYear(), today.getMonth(), 0).getDate();
+    }
+    if (monthObject < 0) {
+        yearObject--;
+        monthObject += 12;
+    }
+
     document.getElementById("year").innerText = yearObject;
+    document.getElementById("months").innerText = monthObject;
+    document.getElementById("days").innerText = dayObject;
 }
-
+}
